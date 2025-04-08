@@ -1,0 +1,16 @@
+name: MambaMotionPrediction
+device: ${device}
+input_features: 9
+intermediate_features: 128
+output_features: 9
+depth: 4
+mode: sequence     # sequence(1 step), mix(multi step)
+block_mode: residual   # none, residual, refined, interpolated
+
+mamba:
+  d_model: ${model.intermediate_features}
+  expand: 2
+  d_state: 4
+  dt_rank: 4
+  d_conv: 2
+  block_mode: ${model.block_mode}

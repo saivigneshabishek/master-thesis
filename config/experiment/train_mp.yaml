@@ -1,0 +1,8 @@
+# @package _global_
+
+# do overrides
+
+training:
+  learning_rate: 0.00219
+logging:
+  name: MAMBA_RESIDUAL_LR_0_0007952

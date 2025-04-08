@@ -1,0 +1,20 @@
+# @package _global_
+
+# do overrides
+nusc:
+  path: '/media/sai/DATA/nuScenes'
+  version: 'v1.0-trainval' # v1.0-trainval, v1.0-mini, v1.0-test
+  eval_set: 'val' # val, test, mini_val
+run_name: 'MAMBA_RESIDUAL_LR_0_0007952_aug'
+tracking:
+  nusc:
+    path: ${nusc.path}
+    version: ${nusc.version}
+  track:
+    # prediction filters: KalmanFilter, ExtendedKalmanFilter, MambaFilter
+    motion_prediction_type: {1: 'MambaFilter', 0: 'MambaFilter', 2: 'MambaFilter', 3: 'MambaFilter', 4: 'MambaFilter', 5: 'MambaFilter', 6: 'MambaFilter'}
+    # motion models: CV, CA, CTRA, CTRV, Bicycle, SSM
+    motion_model: {1: 'SSM', 0: 'SSM', 2: 'SSM', 3: 'SSM', 4: 'SSM', 5: 'SSM', 6: 'SSM'}
+    checkpoint: '/home/sai/2024-mt-deenadayalan/final_outputs/checkpoints/MAMBA_RESIDUAL_LR_0_0007952_aug/model_best.pth'
+    seq_len: 6
+    unscented: False

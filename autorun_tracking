@@ -1,0 +1,8 @@
+#!/bin/bash
+
+python tracking_eval.py environment=environment +experiment=eval_tracking
+
+sleep 5m
+
+python tracking_eval.py environment=environment +experiment=eval_tracking
+

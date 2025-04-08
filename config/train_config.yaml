@@ -1,0 +1,10 @@
+defaults:
+  - model: mamba_motion
+  - dataloader: train_mp
+  - training: training
+  - environment: base_environment
+  - loss: loss
+  - metrics: metrics
+  - logging: wandb
+
+device: cuda

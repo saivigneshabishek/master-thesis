@@ -1,0 +1,5 @@
+mode: online
+project: motion-prediction-final
+entity: ssm_pred
+name: MotionPrediction
+dir: ${environment.output_base_path}/checkpoints/${.name}

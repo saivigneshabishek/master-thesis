@@ -1,0 +1,9 @@
+defaults:
+  - dataloader: eval_dataloader
+  - training: evaluation
+  - tracking: base
+  - model: mamba_motion
+  - environment: base_environment
+  - logging: wandb
+
+device: cuda

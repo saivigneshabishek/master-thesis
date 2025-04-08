@@ -1,0 +1,14 @@
+name: TrainMotionPrediction
+path: ${environment.dataset_base_path}/nuscenes/
+stride: 2
+seq_len: 6
+max_objs: 100
+augmentation: False
+device: ${device}
+batch_size: ${training.batch_size}
+shuffle: ${training.shuffle}
+num_workers: ${training.num_workers}
+
+nusc:
+  path: /media/sai/DATA/nuScenes
+  version: v1.0-trainval 

@@ -1,0 +1,5 @@
+default:
+  - base_environment
+
+dataset_base_path: datasets
+output_base_path: final_outputs
