@@ -4,7 +4,7 @@ Multi-Object Tracking (MOT) plays a vital role in autonomous driving systems. In
 
 ![tbd](assets/tbd.png)
 
-## Baseline 
+## Baseline Architecture
 
 ![baseline](assets/baseline.png)
 
