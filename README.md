@@ -4,7 +4,8 @@ Multi-Object Tracking (MOT) plays a vital role in autonomous driving systems. In
 
 ![tbd](assets/tbd.png)
 
-## Baseline Architecture
+## Baseline 
+
 ![baseline](assets/baseline.png)
 
 ## Object Trajectory Prediction (L=6)
@@ -41,3 +42,15 @@ Multi-Object Tracking (MOT) plays a vital role in autonomous driving systems. In
 ## Object Trajectory Prediction (on various sequence lengths L)
 
 ![seqlengths](assets/seqlengths.png)
+
+## Findings
+
+- All the learned motion models outperformed the Constant Velocity (CV) model in the trajectory prediction task, with the Residual Model achieving the best performance.
+
+- In contrast, when evaluated on the multi-object tracking task, the CV model achieved the best tracking accuracy and precision, outperforming the learned models. This highlights a discrepancy between the results of the trajectory prediction and tracking tasks.
+
+- The Q and R matrices of the Kalman Filter were tuned to optimize tracking performance. While this tuning improved results across all models, the CV model still had the best overall tracking performance.
+
+- When evaluating trajectory prediction across various sequence lengths, a sharp drop in performance was observed at sequence lengths L = 2 and L = 1. This indicates that the shorter sequences lack sufficient temporal motion context for reliable predictions.
+
+- A possible explanation for the discrepancy between the trajectory prediction and tracking tasks is that the models may struggle when objects first appear in the scene, due to the lack of long-range temporal context. This can result in early inaccurate predictions, which may cause false positives in tracking and ultimately reduce overall tracking accuracy.
