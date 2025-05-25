@@ -4,6 +4,7 @@ Multi-Object Tracking (MOT) plays a vital role in autonomous driving systems. In
 
 ![tbd](assets/tbd.png)
 
+## Baseline Architecture
 ![baseline](assets/baseline.png)
 
 ## Object Trajectory Prediction (L=6)
@@ -15,10 +16,6 @@ Multi-Object Tracking (MOT) plays a vital role in autonomous driving systems. In
 | Residual Model     | **0.0481**  | **0.0415**  |
 | Refined Model          | 0.0597  | 0.0552  |
 | Interpolated Model     | 0.0815  | 0.0761  |
-
-## Object Trajectory Prediction (on various sequence lengths L)
-
-![seqlengths](assets/seqlengths.png)
 
 ## Multi-Object Tracking 
 
@@ -40,3 +37,7 @@ Multi-Object Tracking (MOT) plays a vital role in autonomous driving systems. In
 | Baseline Model + QR     | 0.727   | 0.515   | 84907  | 14065  | 16724  | 266 |
 | Residual Model           | 0.716   | 0.518   | 84356  | 14205  | 17221  | 320 |
 | Residual Model + QR     | 0.724   | 0.526   | 84707  | 14126  | 16967  | **223** |
+
+## Object Trajectory Prediction (on various sequence lengths L)
+
+![seqlengths](assets/seqlengths.png)
